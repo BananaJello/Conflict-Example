@@ -1,4 +1,5 @@
 class Tank{
+<<<<<<< HEAD
   int x,y,w,h,dir;
   public Tank(int x, int y, int w, int h){
     this.x = x;
@@ -22,5 +23,15 @@ class Tank{
       rect(x-20,y+h/4,w+20,h/2);
     }
     stroke(255);
+=======
+  int velX, int velY;
+  public Tank(){
+    
+>>>>>>> be484a3d6625a27261edd3db003247f890e88127
+  }
+  public update(){
+    this.x += velX;
+    this.y += velY;
+    this.display();
   }
 }
