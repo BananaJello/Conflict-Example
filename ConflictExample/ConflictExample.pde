@@ -7,7 +7,7 @@ void setup(){
 void draw(){
   clear();
   stroke(0);
-  tank.display();
+  tank.update();
 }
 
 void keyPressed(){
@@ -26,6 +26,9 @@ void keyPressed(){
   if(keyCode == LEFT){
     tank.dir = 3;
     tank.velX = -10;
+  }
+  if(keyCode == 32){
+    bullets.add(new Bullet());
   }
 }
 
